@@ -31,5 +31,15 @@ namespace Gym_Managements_app.User_Controls
         {
 
         }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
