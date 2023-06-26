@@ -20,6 +20,7 @@ namespace Gym_Managements_app.User_Controls
         {
             InitializeComponent();
         }
+
         string personalTraining;
         int Amount,totalAmount,memberId;
         
@@ -200,6 +201,6 @@ private void panel3_Paint(object sender, PaintEventArgs e)
         private void label3_Click(object sender, EventArgs e)
         {
 
-        }
+
     }
 }

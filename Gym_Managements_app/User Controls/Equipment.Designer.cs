@@ -121,13 +121,15 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(130, 500);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+            this.button2.Location = new System.Drawing.Point(174, 615);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(206, 31);
+            this.button2.Size = new System.Drawing.Size(275, 38);
             this.button2.TabIndex = 39;
             this.button2.Text = "Add to maintenance";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+
             // 
             // dataGridView1
             // 

@@ -24,6 +24,7 @@ namespace Gym_Managements_app.User_Controls
 
         }
 
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -40,6 +41,12 @@ namespace Gym_Managements_app.User_Controls
             dataGridView1.DataSource = ds.Tables["Staff"];
 
             
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            NewStaff objNewStaff = new NewStaff();
+            objNewStaff.Show();
+
         }
     }
 }
