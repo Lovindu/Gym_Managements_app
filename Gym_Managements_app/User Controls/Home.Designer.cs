@@ -36,10 +36,7 @@
             this.lblAvailableInstructor = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridNewMembers = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dataGridPendingRenewals = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridNewMembers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridPendingRenewals)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTime
@@ -106,43 +103,20 @@
             // 
             this.dataGridNewMembers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridNewMembers.BackgroundColor = System.Drawing.Color.White;
             this.dataGridNewMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridNewMembers.Location = new System.Drawing.Point(39, 271);
+            this.dataGridNewMembers.Location = new System.Drawing.Point(39, 278);
             this.dataGridNewMembers.Name = "dataGridNewMembers";
             this.dataGridNewMembers.RowHeadersWidth = 51;
             this.dataGridNewMembers.RowTemplate.Height = 24;
-            this.dataGridNewMembers.Size = new System.Drawing.Size(959, 150);
+            this.dataGridNewMembers.Size = new System.Drawing.Size(959, 389);
             this.dataGridNewMembers.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 452);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(257, 36);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Pending renewals";
-            // 
-            // dataGridPendingRenewals
-            // 
-            this.dataGridPendingRenewals.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridPendingRenewals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridPendingRenewals.Location = new System.Drawing.Point(41, 506);
-            this.dataGridPendingRenewals.Name = "dataGridPendingRenewals";
-            this.dataGridPendingRenewals.RowHeadersWidth = 51;
-            this.dataGridPendingRenewals.RowTemplate.Height = 24;
-            this.dataGridPendingRenewals.Size = new System.Drawing.Size(957, 150);
-            this.dataGridPendingRenewals.TabIndex = 7;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.Controls.Add(this.dataGridPendingRenewals);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridNewMembers);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblAvailableInstructor);
@@ -153,7 +127,6 @@
             this.Size = new System.Drawing.Size(1028, 738);
             this.Load += new System.EventHandler(this.Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridNewMembers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridPendingRenewals)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,7 +141,5 @@
         private System.Windows.Forms.Label lblAvailableInstructor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridNewMembers;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridPendingRenewals;
     }
 }

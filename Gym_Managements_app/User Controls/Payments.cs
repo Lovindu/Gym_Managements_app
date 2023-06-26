@@ -14,7 +14,7 @@ namespace Gym_Managements_app.User_Controls
 {
     public partial class Payments : UserControl
     {
-        
+
 
         public Payments()
         {
@@ -22,20 +22,20 @@ namespace Gym_Managements_app.User_Controls
         }
 
         string personalTraining;
-        int Amount,totalAmount,memberId;
-        
+        int Amount, totalAmount, memberId;
+
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
             int searchID = int.Parse(txtNic.Text);
 
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Tharindu\Downloads\Gym_management (1).mdf"";Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\lovin\Documents\Gym_management_1 (1).mdf"";Integrated Security=True;Connect Timeout=30");
             string sql = "Select * from Member where memberId='" + searchID + "'";
 
             SqlCommand cmd = new SqlCommand(sql, conn);
 
 
-           
+
 
             try
             {
@@ -45,7 +45,7 @@ namespace Gym_Managements_app.User_Controls
 
                 lblName.Text = sdr["firstName"].ToString() + " " + sdr["lastName"].ToString();
                 memberId = int.Parse(sdr["memberId"].ToString());
-                lblID.Text =memberId.ToString() ;
+                lblID.Text = memberId.ToString();
                 lblPackage.Text = sdr["membershipType"].ToString();
 
                 personalTraining = sdr["personalTraining"].ToString();
@@ -57,8 +57,8 @@ namespace Gym_Managements_app.User_Controls
 
                 //implementing amount logic for including/excluding personal training
 
-                
-                if (personalTraining=="yes")
+
+                if (personalTraining == "yes")
                 {
                     totalAmount = Amount + 7000;
                     lblAmount.Text = totalAmount.ToString();
@@ -66,7 +66,7 @@ namespace Gym_Managements_app.User_Controls
                 else
                 {
                     totalAmount = Amount - 7000;
-                   lblAmount.Text = totalAmount.ToString();
+                    lblAmount.Text = totalAmount.ToString();
                 }
 
             }
@@ -76,7 +76,7 @@ namespace Gym_Managements_app.User_Controls
             }
 
         }
-private void panel3_Paint(object sender, PaintEventArgs e)
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -115,7 +115,7 @@ private void panel3_Paint(object sender, PaintEventArgs e)
             lblPersonalTraining.Text = "";
             lblPaymentType.Text = "";
             lblAmount.Text = "";
-            
+
             lblMessage.Text = "Payment Successful";
             await Task.Delay(3000);
 
@@ -123,24 +123,25 @@ private void panel3_Paint(object sender, PaintEventArgs e)
 
             //inserting data into table
             DateTime dateTime = DateTime.Now;
-            int payment=totalAmount;
+            int payment = totalAmount;
             int id = memberId;
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Tharindu\Downloads\Gym_management (1).mdf"";Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\lovin\Documents\Gym_management_1 (1).mdf"";Integrated Security=True;Connect Timeout=30");
             string qry = "INSERT INTO Transactions (transactionDate, amount, memberId) VALUES ('" + dateTime + "', '" + payment + "', '" + id + "')";
             SqlCommand cmd = new SqlCommand(qry, con);
             try
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                
-            }catch(Exception Ex)
+
+            }
+            catch (Exception Ex)
             {
                 MessageBox.Show(Ex.Message.ToString());
             }
-        //check primary key incrementation
-        
-        
-        
+            //check primary key incrementation
+
+
+
         }
 
         private void lblAmount_Click(object sender, EventArgs e)
@@ -202,5 +203,6 @@ private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
 
+        }
     }
 }

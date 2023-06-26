@@ -47,7 +47,7 @@ namespace Gym_Managements_app
             string addressNumber = txtAddressNumber.Text;
             string addressLane = txtAddressLane.Text;
             string addressCity = txtAddressCity.Text;
-            string shift = txtShift.Text;
+            string shift = comboBox1.Text;
             string employementStatus;
             string jobTitle = comboBoxJob.Text;
             double salary;

@@ -18,6 +18,10 @@ namespace Gym_Managements_app.User_Controls
             InitializeComponent();
 
             ShowTransactionData();
+
+            totalIncome();
+
+            totalMaintenanceCost();
         }
 
         private void ShowTransactionData()
@@ -30,6 +34,54 @@ namespace Gym_Managements_app.User_Controls
             DataSet ds = new DataSet();
             da.Fill(ds, "Transactions");
             dataGridPayments.DataSource = ds.Tables["Transactions"];
+        }
+
+        private void totalIncome()
+        {
+            double total = 0;
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\lovin\Documents\Gym_management_1 (1).mdf"";Integrated Security=True;Connect Timeout=30");
+
+            string qry = "select sum(amount) as total from Transactions";
+
+            SqlCommand cmd = new SqlCommand(qry, con);
+
+            try
+            {
+                con.Open();
+
+                total = Convert.ToInt32(cmd.ExecuteScalar());
+                lblincome.Text = total.ToString();
+
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
+
+        private void totalMaintenanceCost()
+        {
+
+            double total = 0;
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\lovin\Documents\Gym_management_1 (1).mdf"";Integrated Security=True;Connect Timeout=30");
+
+            string qry = "select sum(amount) as total from Maintenance";
+
+            SqlCommand cmd = new SqlCommand(qry, con);
+
+            try
+            {
+                con.Open();
+
+                total = Convert.ToInt32(cmd.ExecuteScalar());
+                lblMaintenance.Text = total.ToString();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -16,6 +16,8 @@ namespace Gym_Managements_app
         public Form1()
         {
             InitializeComponent();
+            loadFirstScreen();
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -29,6 +31,12 @@ namespace Gym_Managements_app
             panelContainer.Controls.Clear();
             panelContainer.Controls.Add(userControl);
             userControl.BringToFront();
+        }
+
+        private void loadFirstScreen()
+        {
+            Home objHm = new Home();
+            addUserControl(objHm);
         }
 
         private void button2_Click(object sender, EventArgs e)

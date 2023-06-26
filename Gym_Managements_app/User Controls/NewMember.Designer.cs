@@ -65,7 +65,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -79,6 +78,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.comboBoxTrainer = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -463,17 +463,6 @@
             this.label23.TabIndex = 46;
             this.label23.Text = "Personal Trainer";
             // 
-            // textBox12
-            // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(181, 624);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(244, 27);
-            this.textBox12.TabIndex = 47;
-            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -516,7 +505,7 @@
             this.panel2.Controls.Add(this.radioButton2);
             this.panel2.Controls.Add(this.radioButton1);
             this.panel2.Location = new System.Drawing.Point(588, 539);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(399, 25);
             this.panel2.TabIndex = 51;
@@ -563,7 +552,7 @@
             this.panel3.Controls.Add(this.radioButton7);
             this.panel3.Controls.Add(this.radioButton6);
             this.panel3.Location = new System.Drawing.Point(579, 585);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(267, 25);
             this.panel3.TabIndex = 52;
@@ -597,7 +586,7 @@
             this.panel4.Controls.Add(this.radioButton5);
             this.panel4.Controls.Add(this.radioButton4);
             this.panel4.Location = new System.Drawing.Point(171, 583);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(209, 26);
             this.panel4.TabIndex = 53;
@@ -626,17 +615,25 @@
             this.radioButton4.Text = "Monthly";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
+            // comboBoxTrainer
+            // 
+            this.comboBoxTrainer.FormattingEnabled = true;
+            this.comboBoxTrainer.Location = new System.Drawing.Point(171, 627);
+            this.comboBoxTrainer.Name = "comboBoxTrainer";
+            this.comboBoxTrainer.Size = new System.Drawing.Size(209, 24);
+            this.comboBoxTrainer.TabIndex = 54;
+            // 
             // NewMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBoxTrainer);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox12);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
@@ -728,7 +725,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox textBox13;
@@ -742,5 +738,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.ComboBox comboBoxTrainer;
     }
 }

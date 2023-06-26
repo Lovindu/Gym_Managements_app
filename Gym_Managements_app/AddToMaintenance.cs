@@ -16,7 +16,20 @@ namespace Gym_Managements_app
         public AddToMaintenance()
         {
             InitializeComponent();
+            ShowAllequipments();
         }
+
+        private void ShowAllequipments()
+        {
+            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\lovin\Documents\Gym_management_1 (1).mdf"";Integrated Security=True;Connect Timeout=30";
+            string qry = "select * from Equipment";
+
+            SqlDataAdapter da = new SqlDataAdapter(qry, con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Equipment");
+            dataMaintenance.DataSource = ds.Tables["Equipment"];
+        }
+
         public string conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\lovin\Documents\Gym_management_1 (1).mdf"";Integrated Security=True;Connect Timeout=30";
         private void button1_Click(object sender, EventArgs e)
         {
@@ -46,6 +59,22 @@ namespace Gym_Managements_app
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Successfully Added equipment to maintenance!");
                     } catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally { con.Close(); }
+
+                    string notavailable = "not available";
+                    string UpdateAvailability = "update Equipment set avalabilityStatus = '" + notavailable + "' where equipmentID='"+eqId+"'";
+
+                    SqlCommand newCmd = new SqlCommand(UpdateAvailability, con);
+
+                    try
+                    {
+                        con.Open();
+                        newCmd.ExecuteNonQuery();
+                        ShowAllequipments();
+                    } catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }

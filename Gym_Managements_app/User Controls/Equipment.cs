@@ -44,7 +44,7 @@ namespace Gym_Managements_app.User_Controls
         private void LoadEquipmentGrid()
         {
 
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Tharindu\Downloads\Gym_management (1).mdf"";Integrated Security=True;Connect Timeout=30";
+            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\lovin\Documents\Gym_management_1 (1).mdf"";Integrated Security=True;Connect Timeout=30";
             string qry = "select * from Equipment";
 
             SqlDataAdapter da = new SqlDataAdapter(qry, con);
@@ -52,7 +52,6 @@ namespace Gym_Managements_app.User_Controls
             da.Fill(ds, "Equipment");
             dataGridView1.DataSource = ds.Tables["Equipment"];
 
-            //Better if the grid view is bit larger
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -75,7 +74,7 @@ namespace Gym_Managements_app.User_Controls
                 if (Name != "" && textBox1.Text != "" && Type != "" && Manufacturer != "" && textBox5.Text != "" && Pdate != ""
                     && Edate != "" && Description != "")
                 {
-                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Tharindu\Downloads\Gym_management (1).mdf"";Integrated Security=True;Connect Timeout=30");
+                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\lovin\Documents\Gym_management_1 (1).mdf"";Integrated Security=True;Connect Timeout=30");
 
                     string qry = "INSERT INTO Equipment (equipmentID, equipmentName, equipmentType,manufacturer,purchaseDate,purchasePrice,warrentyExpire,avalabilityStatus) VALUES ('" + ID + "', '" + Name + "', '" + Type + "', '" + Manufacturer + "',  '" + Pdate + "','" + Price + "', '" + Edate + "', '" + Description + "')";
 
@@ -110,19 +109,26 @@ namespace Gym_Managements_app.User_Controls
             {
                 MessageBox.Show(ex.Message);
 
-               
+
             }
-            
+
             //Add a refresh button
-          
 
 
 
-        private void button2_Click(object sender, EventArgs e)
+
+            /*private void button2_Click(object sender, EventArgs e)
+            {
+                AddToMaintenance addMaintenance = new AddToMaintenance();
+                addMaintenance.Show();
+
+            }*/
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
             AddToMaintenance addMaintenance = new AddToMaintenance();
             addMaintenance.Show();
-
         }
     }
 }

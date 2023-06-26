@@ -21,55 +21,55 @@ namespace Gym_Managements_app.Calculations
 
             if (paymentType == "monthly")
             {
-                if(membershipType == "individual" && personalTraining == "yes")
+                if(membershipType == "Individual" && personalTraining == "yes")
                 {
                     finalPrice = membershipTypePrice + personalTrainingPrice; 
                 } 
-                else if (membershipType == "individual" && personalTraining == "no") 
+                else if (membershipType == "Individual" && personalTraining == "no") 
                 {
                     finalPrice = membershipTypePrice;
                 }
 
-                if (membershipType == "family" && personalTraining == "yes")
+                if (membershipType == "Family" && personalTraining == "yes")
                 {
                     finalPrice = membershipTypePrice + personalTrainingPrice;
-                } else if (membershipType == "family" && personalTraining == "no")
+                } else if (membershipType == "Family" && personalTraining == "no")
                 {
                     finalPrice = membershipTypePrice;
                 }
 
-                if(membershipType == "couple" && personalTraining == "yes")
+                if(membershipType == "Couple" && personalTraining == "yes")
                 {
                     finalPrice = membershipTypePrice + personalTrainingPrice;
-                } else if (membershipType == "couple" && personalTraining == "no")
+                } else if (membershipType == "Couple" && personalTraining == "no")
                 {
                     finalPrice = membershipTypePrice;
                 }
             } else
             {
-                if (membershipType == "individual" && personalTraining == "yes")
+                if (membershipType == "Individual" && personalTraining == "yes")
                 {
                     finalPrice = ((membershipTypePrice * 12) - ((membershipTypePrice / 100) * 25)) + (personalTrainingPrice * 12);
                 }
-                else if (membershipType == "individual" && personalTraining == "no")
+                else if (membershipType == "Individual" && personalTraining == "no")
                 {
                     finalPrice = ((membershipTypePrice * 12) - ((membershipTypePrice / 100) * 25));
                 }
 
-                if (membershipType == "family" && personalTraining == "yes")
+                if (membershipType == "Family" && personalTraining == "yes")
                 {
                     finalPrice = ((membershipTypePrice * 12) - ((membershipTypePrice / 100) * 25)) + (personalTrainingPrice * 12);
                 }
-                else if (membershipType == "family" && personalTraining == "no")
+                else if (membershipType == "Family" && personalTraining == "no")
                 {
                     finalPrice = ((membershipTypePrice * 12) - ((membershipTypePrice / 100) * 25));
                 }
 
-                if (membershipType == "couple" && personalTraining == "yes")
+                if (membershipType == "Couple" && personalTraining == "yes")
                 {
                     finalPrice = ((membershipTypePrice * 12) - ((membershipTypePrice / 100) * 25)) + (personalTrainingPrice * 12);
                 }
-                else if (membershipType == "couple" && personalTraining == "no")
+                else if (membershipType == "Couple" && personalTraining == "no")
                 {
                     finalPrice = ((membershipTypePrice * 12) - ((membershipTypePrice / 100) * 25));
                 }
