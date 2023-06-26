@@ -53,6 +53,18 @@
       <DependentUpon>AddToMaintenance.cs</DependentUpon>
     </Compile>
     <Compile Include="Calculations\Calculations.cs" />
+    <Compile Include="EditPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPackage.Designer.cs">
+      <DependentUpon>EditPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSalary.Designer.cs">
+      <DependentUpon>EditSalary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +135,12 @@
     </Compile>
     <EmbeddedResource Include="AddToMaintenance.resx">
       <DependentUpon>AddToMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPackage.resx">
+      <DependentUpon>EditPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSalary.resx">
+      <DependentUpon>EditSalary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
