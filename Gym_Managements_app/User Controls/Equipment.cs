@@ -31,5 +31,11 @@ namespace Gym_Managements_app.User_Controls
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddToMaintenance addMaintenance = new AddToMaintenance();
+            addMaintenance.Show();
+        }
     }
 }

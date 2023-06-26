@@ -16,5 +16,26 @@ namespace Gym_Managements_app.User_Controls
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string subject = txtSubject.Text;
+            string reason = txtReason.Text;
+            string content = txtContent.Text;
+
+            if (subject != "" && reason != "" && content != "")
+            {
+                //Database
+            }
+            else
+            {
+                MessageBox.Show("Please Fill All The Information");
+            }
+
+            txtSubject.Text = "";
+            txtReason.Text = "";
+            txtContent.Text = "";
+
+        }
     }
 }

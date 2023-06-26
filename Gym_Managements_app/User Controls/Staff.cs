@@ -21,5 +21,11 @@ namespace Gym_Managements_app.User_Controls
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            NewStaff objNewStaff = new NewStaff();
+            objNewStaff.Show();
+        }
     }
 }

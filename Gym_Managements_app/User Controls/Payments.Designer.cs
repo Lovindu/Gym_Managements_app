@@ -31,23 +31,23 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNic = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
-            this.lblPackage = new System.Windows.Forms.Label();
-            this.lblPersonalTraining = new System.Windows.Forms.Label();
-            this.lblPaymentType = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblAmount = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtNic = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lblAmount = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblPaymentType = new System.Windows.Forms.Label();
+            this.lblPersonalTraining = new System.Windows.Forms.Label();
+            this.lblPackage = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -87,6 +87,32 @@
             this.panel2.Size = new System.Drawing.Size(1028, 72);
             this.panel2.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.BackgroundImage = global::Gym_Managements_app.Properties.Resources.search_interface_symbol__1_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(760, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(33, 30);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtNic
+            // 
+            this.txtNic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNic.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNic.Location = new System.Drawing.Point(424, 26);
+            this.txtNic.Name = "txtNic";
+            this.txtNic.Size = new System.Drawing.Size(330, 34);
+            this.txtNic.TabIndex = 2;
+            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -97,15 +123,6 @@
             this.label2.Size = new System.Drawing.Size(231, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Search By NIC Number";
-            // 
-            // txtNic
-            // 
-            this.txtNic.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNic.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNic.Location = new System.Drawing.Point(424, 26);
-            this.txtNic.Name = "txtNic";
-            this.txtNic.Size = new System.Drawing.Size(330, 34);
-            this.txtNic.TabIndex = 2;
             // 
             // panel3
             // 
@@ -128,134 +145,6 @@
             this.panel3.Size = new System.Drawing.Size(1028, 603);
             this.panel3.TabIndex = 2;
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(278, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Name :";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(278, 187);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 25);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Package :";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(278, 130);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 25);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Member ID :";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(278, 251);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(193, 25);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Personal Training :";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(278, 308);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 25);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Payment Type :";
-            // 
-            // lblName
-            // 
-            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(381, 71);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(0, 25);
-            this.lblName.TabIndex = 5;
-            // 
-            // lblID
-            // 
-            this.lblID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(419, 130);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(0, 25);
-            this.lblID.TabIndex = 6;
-            // 
-            // lblPackage
-            // 
-            this.lblPackage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblPackage.AutoSize = true;
-            this.lblPackage.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPackage.Location = new System.Drawing.Point(401, 187);
-            this.lblPackage.Name = "lblPackage";
-            this.lblPackage.Size = new System.Drawing.Size(0, 25);
-            this.lblPackage.TabIndex = 7;
-            // 
-            // lblPersonalTraining
-            // 
-            this.lblPersonalTraining.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblPersonalTraining.AutoSize = true;
-            this.lblPersonalTraining.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPersonalTraining.Location = new System.Drawing.Point(488, 251);
-            this.lblPersonalTraining.Name = "lblPersonalTraining";
-            this.lblPersonalTraining.Size = new System.Drawing.Size(0, 25);
-            this.lblPersonalTraining.TabIndex = 8;
-            // 
-            // lblPaymentType
-            // 
-            this.lblPaymentType.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblPaymentType.AutoSize = true;
-            this.lblPaymentType.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPaymentType.Location = new System.Drawing.Point(453, 308);
-            this.lblPaymentType.Name = "lblPaymentType";
-            this.lblPaymentType.Size = new System.Drawing.Size(0, 25);
-            this.lblPaymentType.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(278, 382);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(153, 38);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Amount :";
-            // 
-            // lblAmount
-            // 
-            this.lblAmount.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblAmount.AutoSize = true;
-            this.lblAmount.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmount.ForeColor = System.Drawing.Color.LightCoral;
-            this.lblAmount.Location = new System.Drawing.Point(451, 382);
-            this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(137, 38);
-            this.lblAmount.TabIndex = 11;
-            this.lblAmount.Text = "Amount";
-            // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -271,22 +160,135 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Pay";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // lblAmount
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.BackgroundImage = global::Gym_Managements_app.Properties.Resources.search_interface_symbol__1_;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(760, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 30);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
+            this.lblAmount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblAmount.AutoSize = true;
+            this.lblAmount.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.ForeColor = System.Drawing.Color.LightCoral;
+            this.lblAmount.Location = new System.Drawing.Point(451, 382);
+            this.lblAmount.Name = "lblAmount";
+            this.lblAmount.Size = new System.Drawing.Size(137, 38);
+            this.lblAmount.TabIndex = 11;
+            this.lblAmount.Text = "Amount";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(278, 382);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(153, 38);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Amount :";
+            // 
+            // lblPaymentType
+            // 
+            this.lblPaymentType.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPaymentType.AutoSize = true;
+            this.lblPaymentType.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaymentType.Location = new System.Drawing.Point(453, 308);
+            this.lblPaymentType.Name = "lblPaymentType";
+            this.lblPaymentType.Size = new System.Drawing.Size(0, 25);
+            this.lblPaymentType.TabIndex = 9;
+            // 
+            // lblPersonalTraining
+            // 
+            this.lblPersonalTraining.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPersonalTraining.AutoSize = true;
+            this.lblPersonalTraining.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPersonalTraining.Location = new System.Drawing.Point(488, 251);
+            this.lblPersonalTraining.Name = "lblPersonalTraining";
+            this.lblPersonalTraining.Size = new System.Drawing.Size(0, 25);
+            this.lblPersonalTraining.TabIndex = 8;
+            // 
+            // lblPackage
+            // 
+            this.lblPackage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPackage.AutoSize = true;
+            this.lblPackage.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackage.Location = new System.Drawing.Point(401, 187);
+            this.lblPackage.Name = "lblPackage";
+            this.lblPackage.Size = new System.Drawing.Size(0, 25);
+            this.lblPackage.TabIndex = 7;
+            // 
+            // lblID
+            // 
+            this.lblID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(419, 130);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(0, 25);
+            this.lblID.TabIndex = 6;
+            // 
+            // lblName
+            // 
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(381, 71);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(0, 25);
+            this.lblName.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(278, 308);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(160, 25);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Payment Type :";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(278, 251);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(193, 25);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Personal Training :";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(278, 130);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(130, 25);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Member ID :";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(278, 187);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 25);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Package :";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(278, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Name :";
             // 
             // Payments
             // 
